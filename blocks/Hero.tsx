@@ -24,7 +24,9 @@ export default function Hero(p: {
         <p className={styles.subtitle}>{p.subtitle}</p>
         {p.subscribeAction && <SubscribeInput className={styles.subscribe} placeholder={p.subscribePlaceholder} action={p.subscribeAction}/>}
       </div>
-      <div className={styles.illustration}/>
+      <div className={styles.illustration}>
+        <img src={p.illustration} className={styles.illustration} alt={p.title}/>
+      </div>
     </Section>
   );
 }
